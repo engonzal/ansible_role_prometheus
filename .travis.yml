@@ -8,7 +8,8 @@ env:
   matrix:
     - MOLECULE_DISTRO: centos7
     - MOLECULE_DISTRO: ubuntu1804
-    - MOLECULE_DISTRO: debian10
+    # Disabling due to bug with testinfra/Debian 10
+    # - MOLECULE_DISTRO: debian10
 
 install:
   # Install test dependencies.
